@@ -25,4 +25,5 @@ jobs:
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
       - name: Output preview URL
-        run: echo "Preview URL: ${{ steps.deploy.outputs.preview-url }}"
+        run: |
+          echo "Preview URL: ${{ steps.deploy.outputs.preview-url }}"
